@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgba(199, 197, 197, 0.1);
+}
+/* Header qismi uchun yozilgan */
+.headerContaneir {
+     position: fixed;
+     width: 100%;
+     height: 60px;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 3;
+}
+ .headerContaneir .logoImg {
+     position: relative;
+     float: left;
+     display: flex;
+     left: 7.5%;
+ }
+ .headerContaneir .logoImg img {
+     position: relative;
+     /* float: left; */
+     display: inline-block;
+ }
+ .headerContaneir .logoImg h2 {
+     position: relative;
+     display: flex;
+     align-items: center;
+     left: 5px;
+     color: rgba(0,0,0,0.8);
+ }
+ .headerContaneir .menuBar {
+     position: relative;
+     float: right;
+     display: flex;
+     height: 100%;
+     right: 7.5%;
+}
+.headerContaneir .menuBar ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    right: 50px;
+}
+.headerContaneir .menuBar ul li a {
+    position: relative;
+    padding: 0 15px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 14px;
+    transition: .3s;
+}
+.headerContaneir .menuBar ul li a:hover {
+    color: rgba(0, 151, 230,1.0);
+    transition: .3s;
+}
+/* header qismi scroll bolgan vaqti */
+header.sticky {
+    background-color: rgba(220, 221, 225,1.0);
+    box-shadow: .1em .1em .8em .1em rgba(1,1,1,.1);
+}
+.menuBar .btn {
+    position: relative;
+    display: flex;
+    line-height: 100%;
+    height: 25px;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menuBar button {
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgba(31, 187, 99,0.8);
+    padding: 15px 25px;
+    transition: .5s;
+}
+.menuBar button:hover {
+    background-color: red;
+    transition: .5s;
+}
+.menuBar .btn a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+/* Header qismi uchun yozilgan kodalr the end */
+/* Img va text lar uchun yozilgan kodlar */
+.imgBody {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+}
+.imgBody .bodyImg {
+    position: relative;
+    float: right;
+    width: 65%;
+}
+.imgBody .bodyImg img {
+    position: relative;
+    width: 750px;
+    float: right;
+}
+.imgBody .bodyText {
+    position: relative;
+    left: 10%;
+    top: 100px;
+    width: 35%;
+    height: 400px;
+    float: left;
+    z-index: 1;
+}
+
+.imgBody .bodyText h3 {
+    color:rgba(72, 52, 212,.7);
+    padding: 15px 0;
+}
+.imgBody .bodyText h1 {
+    padding: 10px 0;
+    color: rgba(19, 15, 64,.9);
+    font-size: 2.8em;
+    line-height: 60px;
+}
+.imgBody .bodyText p {
+    padding: 10px 0;
+    line-height: 28px;
+    color: rgba(1, 1, 1, 0.7);
+}
+.imgBody .bodyText .bodyBtn {
+    position: relative;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: none;
+    top: 15px;
+    background-color: rgba(72, 52, 212,.8);
+}
+.imgBody .bodyText .bodyBtn a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 14px;
+}
+/* Img and text qismi uchun yozilgan kodlar the end */
+.clr {
+    clear: both;
+}
+/* qo'shimcha linklar uchun yozilgan kodlar */
+.linkImg {
+    position: relative;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    height: 170px;
+    align-items: center;
+}
+/* qo'shimcha linklar uchun yozilgan kodlar the end */
+/* red line codes bottom*/
+.redLine { 
+    border: 2px solid rgba(255, 0, 0,.8);
+    width: 5%;
+    margin: auto;
+    border-radius: 15px;
+}
+/* red line codes bottom the end*/
+/* our serices coders start*/
+.ourBox {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.ourBox .ourText {
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.ourBox .ourText a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.5);
+    border-radius: 8px;
+}
+.ourBox .ourText h2 {
+    margin-top: 25px;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    color: rgba(25, 42, 86,1.0);
+}
+.ourBox .ourText p {
+    margin-top: 15px;
+    position: relative;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+}
+.ourBox .ourBoxs {
+    position: relative;
+    top: 200px;
+    display: flex;
+    column-gap: 25px;
+    width: 100%;
+}
+.ourBox .ourBoxs .boxBlock {
+    mix-blend-mode: multiply;
+    background-size: cover;
+    background-image: url('./img/img/core-img/cards-bg.png');
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.2);
+}
+.ourBox .ourBoxs .boxBlock img {
+    margin-top: 20px;
+}
+.ourBox .ourBoxs .boxBlock h3 {
+    margin-top: 25px;
+    line-height: 30px;
+    color: rgba(25, 42, 86,1.0);
+    font-weight: 550;
+}
+.ourBox .ourBoxs .boxBlock p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+    padding-bottom: 20px;
+}
+/* our servisec coders the end */
+.teamMebrs {
+    position: relative;
+    top: 60px;
+    width: 85%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.teamMebrs img {
+    width: 550px;
+}
+.teamMebrs a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.2);
+    border-radius: 8px;
+}
+.teamMebrs .teamText {
+    position: relative;
+    height: 390px;
+    left: 25px;
+}
+.teamMebrs  h1 {
+    margin-top: 30px;
+    font-size: 2.7em;
+    color: rgba(25, 42, 86,1.0);
+}
+.teamMebrs .teamBtn a {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 14px;
+}
+.teamMebrs  button {
+    position: relative;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: none;
+    top: 35px;
+    background-color: rgba(72, 52, 212,.8);
+}
+.teamMebrs p {
+    color: rgba(0,0,0,0.4);
+    font-weight: 550;
+    padding: 15px 0;
+    line-height: 25px;
+}
+.teamMebrs .peopleText h1 {
+    margin-top: 20px;
+    font-size: 2.2em;
+}
+.teamMebrs .ideaText h1 {
+    font-size: 2.2em;
+    margin-top: 20px;
+}
+.getBoxColor {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./img/img/bg-img/trial-bg.png');
+}
+.getBoxColor .getBox {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.getBoxColor .getBox .getText {
+    position: relative;
+    height: 380px;
+    padding-left: 25px;
+}
+.getBoxColor .getBox .getText a {
+    text-decoration: none;
+    font-weight: 550;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255,.8);
+    border-radius: 8px;
+}
+.getBoxColor .getBox .getText h1 {
+    color: #fff;
+    margin-top: 25px;
+    line-height: 50px;
+    font-size: 2.5em;
+}
+.getBoxColor .getBox .getText p {
+    color: #fff;
+    line-height: 30px;
+    margin-top: 25px;
+}
+.getBoxColor .getBox button {
+    /* position: relative; */
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: rgba(72, 52, 212,.8);
+}
+.getBoxColor .getBox .getBtn a {
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+}
+.getBoxColor .getBox .getText .getText-block {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding: 15px 15px;
+    background-color: rgba(255, 255, 255,.3);
+    border-radius: 30px;
+    margin-top: 45px;
+    box-shadow: 0em 0em 1em .1em rgba(0, 0, 0, .1);
+}
+.getBoxColor .getBox .getText .getText-block input {
+    position: relative;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    font-size: 1.05em;
+    padding: 8px 15px;
+    padding-left: 45px;
+    border: 2px solid rgba(140, 122, 230,1.0);
+    border-radius: 25px;
+}
+.getBoxColor .getBox .getText .getText-block label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.1em;
+    z-index: 1;
+    color: #8b6df8;
+}
+/* Get trail coders the end */
+/* working coders start */
+.workBox {
+    position: relative;
+    top: 60px;
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.workBox .workImgsvg img {
+    position: absolute;
+    float: right;
+    right: -8.8%;
+    top: 200px;
+}
+.workBox .workText {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.workBox .workText a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.2);
+    border-radius: 8px;
+}
+.workBox .workText h2 {
+    margin-top: 25px;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    color: rgba(25, 42, 86,1.0);
+}
+.workBox .workText p {
+    margin-top: 15px;
+    position: relative;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+}
+.workBox .workBoxs {
+    position: relative;
+    top: 180px;
+    display: flex;
+    column-gap: 25px;
+    width: 100%;
+}
+.workBox .workBoxs .boxBlock {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.2);
+    text-align: center;
+    background-color: #fff;
+}
+.workBox .workBoxs .boxBlock a img {
+    background-size: cover;
+    width: 100%;
+}
+.workBox .workBoxs .boxBlock img {
+    margin-top: 20px;
+}
+.workBox .workBoxs .boxBlock h3 {
+    margin-top: 25px;
+    line-height: 30px;
+    color: rgba(25, 42, 86,1.0);
+    font-weight: 550;
+    text-transform: capitalize;
+}
+.workBox .workBoxs .boxBlock p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+}
+.featuresBox {
+    position: relative;
+    top: 60px;
+    width: 85%;
+    margin: 0 auto;
+    height: 130vh;
+}
+.featuresBox .workText {
+    position: relative;
+    top: 100px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.featuresBox .workText a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.2);
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.featuresBox .workText h2 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: rgba(25, 42, 86,1.0);
+}
+.featuresBox .workText p {
+    margin-top: 15px;
+    position: relative;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+}
+.featuresBox .featrueBoxs {
+    position: relative;
+    top: 150px;
+    display: flex;
+}
+.featuresBox .featrueBoxs .featrImg img {
+    width: 550px;
+}
+.featuresBox .featrueBoxs .featrText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 20px;
+}
+.featuresBox .featrueBoxs .featrText .featrBlock {
+    display: flex;
+    height: 28%;
+    align-items: center;
+    box-shadow: 0em 0em 1.2em .1em rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    padding-right: 5px;
+}
+.featuresBox .featrueBoxs .featrText .featrBlock .blockImg {
+    padding: 0 20px;
+}
+.featrText .featrBlock .blockText h2 {
+    text-transform: capitalize;
+    color: rgba(27, 20, 100,1.0);
+    line-height: 35px;
+    font-size: 1.2em;
+}
+.featrText .featrBlock .blockText p {
+    color: rgba(0, 0, 0, .7);
+    line-height: 25px;
+    font-size: .9em;
+}
+.planceColor {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 140vh;
+    background-color: rgba(18, 203, 196,0.1);
+}
+.planceColor .plancBox {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+.planceColor .plancBox .plancText{
+    position: relative;
+    top: 90px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.plancBox .plancText a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.2);
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.plancBox .plancText h2 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: rgba(25, 42, 86,1.0);
+}
+.plancBox .plancText p {
+    margin-top: 15px;
+    position: relative;
+    line-height: 25px;
+    color: rgba(1, 1, 1, 0.6);
+    font-weight: 550;
+}
+.plancBox .plancMoney {
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.plancMoney .moneybox {
+    border-radius: 5px;
+    text-align: center;
+    width: 32%;
+}
+.plancMoney .moneybox:hover {
+    box-shadow: 0em 0em 1.5em 0.1em rgba(0, 0, 0, .1);
+}
+.plancMoney .moneybox h3 {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .9);
+    line-height: 60px;
+    margin-top: 30px;
+}
+.plancMoney .moneybox h1 {
+    font-size: 3.1em;
+    text-transform: capitalize;
+    color: rgba(0, 115, 235,1.0);
+    line-height: 50px;
+}
+.plancMoney .moneybox h4 {
+    color: rgba(0,0,0,0.4);
+    text-transform: capitalize;
+    line-height: 70px;
+}
+.plancMoney .moneybox p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+    padding: 0 29%;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.plancMoney .moneybox .moneyBtn {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(72, 52, 212,.7);
+    padding: 15px 15%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.lovedBox {
+    position: relative;
+    top: 60px;
+}
+.lovedImg img {
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+}
+.lovedBlock {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+.lovedBlock .lovedText {
+    position: relative;
+    top: 80px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+}
+.lovedBlock .lovedText a {
+    text-decoration: none;
+    font-weight: 550;
+    padding: 8px 20px;
+    background-color: rgba(126, 214, 223,.2);
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+.lovedBlock .lovedText h2 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1.9em;
+    text-transform: capitalize;
+    color: rgba(25, 42, 86,1.0);
+}
+.lovedBlock .lovedText p {
+    margin-top: 15px;
+    position: relative;
+    line-height: 25px;
+    font-weight: 550;
+    color: rgba(1, 1, 1, 0.6);
+}
+.lovedBlock .lovedExspert {
+    position: relative;
+    margin-top: 175px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.lovedBlock .lovedExspert .exsperts {
+    background-color: #fff;
+    width: 48%;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    padding: 15px;
+    background-image: url('./img/img/core-img/cards-bg.png');
+    background-size: cover;
+}
+.lovedBlock .lovedExspert .exsperts img {
+    width: 100px;
+    padding: 15px 0;
+    border-radius: 50%;
+}
+.lovedBlock .lovedExspert .exsperts p {
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    line-height: 25px;
+    padding: 0 10px;
+}
+.lovedBlock .lovedExspert .exsperts h3 {
+    text-transform: capitalize;
+    line-height: 30px;
+    padding: 15px 0 0;
+    font-size: 1em;
+}
+.lovedBlock .lovedExspert .exsperts h4 {
+    color: rgba(0,0,0,0.5);
+    text-transform: capitalize;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+.lovedBlock .exsNext {
+    /* border: 1px solid black; */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+.lovedBlock .exsNext a {
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0em 0em 1em .1em rgba(0, 0, 0, .2);
+}
+.lovedBox .readMore {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    top: 110px;
+    color: #fff;
+    background-color: rgba(6, 82, 221,.7);
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.lovedBox .readMore .readText h2{
+    line-height: 50px;
+    font-size: 2em;
+    color: #ccc;
+}
+.lovedBox .readMore .readText h1 {
+    font-size: 2.3em;
+    line-height: 70px;
+}
+.lovedBox .readMore .readBtn {
+    position: relative;
+    top: 30px;
+    right: 120px;
+}
+.lovedBox .readMore .readBtn button {
+    padding: 15px 35px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 118, 117,1.0);
+}
+.lovedBox .readMore .readBtn button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footerBox {
+    position: relative;
+    top: 300px;
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid black; */
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    grid-gap: 14px;
+}
+.footerBox .footBlock1 .footLogo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footerBox .footLogo img {
+    width: 40px;
+}
+.footerBox .footBlock1 .boxText p {
+    line-height: 25px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.footerBox .footBlock2 h3 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.footerBox .footBlock2 p {
+    text-transform: capitalize;
+    line-height: 25px;
+}
+.footerBox .footBlock2:nth-child(3) {
+    width: 100px;
+}
+.footerBox .footBlock2:nth-child(4) {
+    margin-left: 35px;
+}
+
+.footBlock1 .footLink {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.footBlock1 .footLink a{
+    width: 25px;
+    color: #fff;
+    background-color: #2ed573;
+    padding: 5px;
+}
+
+
+
+
